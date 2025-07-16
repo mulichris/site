@@ -1,0 +1,130 @@
+/* Monochrome style for photography page */
+.photography-page {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.photography-page .container {
+    max-width: 1400px;
+}
+
+.photography-page header {
+    margin-bottom: 3rem;
+}
+
+.photography-page .name {
+    color: #fff;
+}
+
+.photography-page .tagline {
+    color: #aaa;
+}
+
+.photography-page nav ul {
+    border-bottom: 1px solid #333;
+}
+
+.photography-page nav a {
+    color: #aaa;
+}
+
+.photography-page nav a:hover, 
+.photography-page nav a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Portfolio sections */
+.portfolio-section {
+    margin-bottom: 5rem;
+}
+
+.portfolio-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Placeholder for images - replace with your actual images */
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.project-info p {
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+.photography-page footer {
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+.photography-page .social-links a {
+    color: #aaa;
+}
+
+.photography-page .social-links a:hover {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+}
+
+/* Make project items clickable */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+} 

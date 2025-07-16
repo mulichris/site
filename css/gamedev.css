@@ -1,0 +1,209 @@
+/* 8-bit style for game development page */
+.gamedev-page {
+    background-color: #0f0f1b;
+    color: #f8f8f8;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.pixel-text {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.gamedev-page .container {
+    max-width: 1200px;
+}
+
+.gamedev-page header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.gamedev-page .name {
+    color: #5bf870;
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 0 #1a3a1c;
+    margin-bottom: 1rem;
+}
+
+.gamedev-page .tagline {
+    color: #f8f8f8;
+    font-size: 0.9rem;
+}
+
+.gamedev-page nav ul {
+    border-bottom: 4px solid #333366;
+    padding-bottom: 1rem;
+}
+
+.gamedev-page nav a {
+    color: #aaaaee;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.gamedev-page nav a:hover, 
+.gamedev-page nav a.active {
+    color: #ffffff;
+    border-bottom: 4px solid #5bf870;
+}
+
+/* Game projects styling */
+.game-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.game-project {
+    display: flex;
+    background-color: #1a1a2e;
+    border: 4px solid #333366;
+    padding: 1rem;
+    gap: 2rem;
+    position: relative;
+}
+
+.game-project::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 100%;
+    height: 100%;
+    background-color: #333366;
+    z-index: -1;
+}
+
+.game-preview {
+    flex: 0 0 300px;
+    height: 200px;
+    border: 4px solid #444477;
+    overflow: hidden;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8888aa;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+.game-info {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.game-info h3 {
+    color: #5bf870;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    text-shadow: 2px 2px 0 #1a3a1c;
+}
+
+.game-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.platform, .year {
+    background-color: #333366;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+}
+
+.game-info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #ccccee;
+}
+
+.game-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.pixel-btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    background-color: #5bf870;
+    color: #1a3a1c;
+    border: none;
+    box-shadow: 3px 3px 0 #1a3a1c;
+    transition: transform 0.1s, box-shadow 0.1s;
+    text-decoration: none;
+}
+
+.pixel-btn:hover {
+    background-color: #7dff92;
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 #1a3a1c;
+}
+
+.pixel-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 #1a3a1c;
+}
+
+/* Footer styling */
+.gamedev-page footer {
+    margin-top: 4rem;
+    border-top: 4px solid #333366;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.gamedev-page footer p {
+    font-size: 0.7rem;
+    color: #aaaaee;
+    margin-bottom: 1rem;
+}
+
+.gamedev-page .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.gamedev-page .social-links a {
+    color: #5bf870;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+}
+
+.gamedev-page .social-links a:hover {
+    color: #7dff92;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .game-project {
+        flex-direction: column;
+    }
+    
+    .game-preview {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    .gamedev-page .name {
+        font-size: 1.5rem;
+    }
+    
+    .gamedev-page nav a {
+        font-size: 0.6rem;
+    }
+} 
